@@ -1,26 +1,108 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Document</title>    
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
-    <script src="common.js"></script>
-    <script src="index.js"></script>
 </head>
-
 <body>
-    <div id="content">
-        <div id="login_box">
-            <input id="i" placeholder="아이디">
-            <br><br>
-            <input id="p" placeholder="암호"><br>
-            <br>
-            <input id="btn" type="button" value="로그인" onclick="login();">
-            <a href="reg_member.html"><input id="btn" type="button" value="회원가입"></a>
+    <div id="myLayout">
+        <!-- ************************************************ -->
+        <!-- 상단 영역 -->
+        <!-- ************************************************ -->
+        <div id="top">
+            <div id="top_left">
+                <img id="logo" src="LOL.png">
+                
+            </div>
+            <div id="top_banner">
+                <img id="banner" src="MAPLE.jpg">
+            </div>
+            <div id="nav">            
+                <a href="#">홈</a>
+                |
+                <a href="#">챔피언</a>
+                |
+                <a href="#">스킨</a>
+            </div>    
         </div>
+        <!-- ************************************************ -->
+        <!-- 중단 영역 -->
+        <!-- ************************************************ -->
+
+        <!-- 왼쪽 영역 -->
+        <div id="left">
+            <!-- 로그인 영역 -->
+            <div id="login">
+                <form>
+                    <input id="login_id" type="text" placeholder="아이디" maxlength="10" minlength="4">
+                    <input id="login_pw" type="password" placeholder="암호"><br>
+                    <input type="submit" value="로그인">
+                    <input type="button" value="회원가입">
+                </form>
+            </div>
+
+            <!-- 게시판(일반) 영역 -->
+            <div id="board">
+                <p class="board_title">게시판</p>
+                <a href="#">자유게시판</a><br>
+                <a href="#">공지게시판</a><br>
+                <a href="#">질문/답변 게시판</a>
+            </div>
+            <!-- 게시판(자랑하기) 영역 -->
+            <div id="proud">
+                <p class="board_title">LOL</p>
+                <a href="#">챔피언</a><br>
+                <a href="#">스킨</a><br>
+                <a href="#">검색</a>
+            </div>            
+
+
+        </div>
+
+        <!-- 가운데 영역 -->
+        <div id="mid">
+            <img class="mid_img_box" src="Galio.jpg">
+            <img class="mid_img_box" src="Aatrox.jpg">
+            <img class="mid_img_box" src="Ahri.jpg">
+            <img class="mid_img_box" src="Akali.png">
+            <img class="mid_img_box" src="Alista.jpg">
+            <img class="mid_img_box" src="Cassiopeia.jpg">
+            <img class="mid_img_box" src="DrMundo.jpg">
+            <img class="mid_img_box" src="Ekko.jpg">
+            <img class="mid_img_box" src="Graves.jpg">
+            <img class="mid_img_box" src="Gwen.jpg">
+            <img class="mid_img_box" src="Jax.jpg">
+            <img class="mid_img_box" src="LeeSin.jpg">
+            <img class="mid_img_box" src="MasterYi.jpg">
+            <img class="mid_img_box" src="MonkeyKing.jpg">
+            <img class="mid_img_box" src="Nasus.jpg">
+            <img class="mid_img_box" src="Riven.jpg">
+            <img class="mid_img_box" src="Talon.jpg">
+            <img class="mid_img_box" src="Vladimir.jpg">
+            <img class="mid_img_box" src="Yasuo.jpg">
+            <img class="mid_img_box" src="Zed.jpg">
+            
+        </div>
+
+        <!-- 오른쪽 영역 -->
+        <div id="right">
+            <img class="right_banner" src="ULTRA.jpg">
+            <img class="right_banner" src="ULTRA.jpg">
+            <img class="right_banner" src="ULTRA.jpg">
+            <img class="right_banner" src="ULTRA.jpg">  
+            
+        </div>
+        <!-- ************************************************ -->
+        <!-- 하단 영역 -->
+        <!-- ************************************************ -->        
+        <div id="bot">
+            <p>copyright ㅇㅇㅇ회사. Tel 02-111-2222.</p>
+            <p>개인정보책임자 안성모</p>            
+        </div>
+        
+
     </div>
 </body>
-
 </html>
